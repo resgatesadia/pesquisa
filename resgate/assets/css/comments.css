@@ -1,0 +1,123 @@
+.comment-container {
+    width: 100%;
+    margin: auto;
+}
+
+.comment-container .comment-container__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.comment {
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 15px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.comment .author {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.comment .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.comment .stars {
+    color: gold;
+    margin-right: -5px;
+
+}
+
+.stars .material-symbols-outlined {
+    font-size: 24px;
+}
+
+.comment .date {
+    color: #888;
+    font-size: 14px;
+    font-family: 'GellixRegular';
+}
+
+.images {
+    display: flex;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.images img {
+    width: 125px;
+    height: 100px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.comment .content p {
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+.comment .content img {
+    width: 250px;
+}
+
+.comment .actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.actions .like-button, .dislike-button {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 14px;
+    color: #333;
+}
+
+.actions .like-button .material-symbols-outlined, .dislike-button .material-symbols-outlined {
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+.actions .like-button .curtir-count {
+    margin-left: 5px;
+}
+
+.actions .like-button.active {
+    background: #007bff;
+}
+
+.dislike-button.active {
+    background: #ff5252;
+}
+
+.like-button:hover {
+    background: #007bff;
+}
+
+.dislike-button:hover {
+    background: #ff5252;
+}
+
+@media screen and (min-width: 992px) {
+    .comment-container {
+        max-width: 30%;
+        margin: auto;
+    }
+}
